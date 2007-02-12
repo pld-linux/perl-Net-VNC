@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	VNC
 Summary:	Net::VNC - a simple VNC client
-Summary(pl.UTF-8):   Net::VNC - prosty klient VNC
+Summary(pl.UTF-8):	Net::VNC - prosty klient VNC
 Name:		perl-Net-VNC
 Version:	0.35
 Release:	0.1
