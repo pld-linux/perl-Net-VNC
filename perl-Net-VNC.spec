@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	VNC
 Summary:	Net::VNC - a simple VNC client
-Summary(pl):	Net::VNC - prosty klient VNC
+Summary(pl.UTF-8):   Net::VNC - prosty klient VNC
 Name:		perl-Net-VNC
 Version:	0.35
 Release:	0.1
@@ -33,16 +33,16 @@ based largely on the RFB Protocol Specification,
 in the DES encryption description, which is clarified via
 <http://www.vidarholen.net/contents/junk/vnc.html>.
 
-%description -l pl
-VNC (Virtual Network Computing) to system wspÛ≥dzielenia pulpitu
-uøywaj±cy protoko≥u RFB (Remote FrameBuffer - zdalnego framebuffera)
-do zdalnego sterowania innym komputerem. Ten modu≥ dzia≥a jako klient
-VNC, komunikuj±c siÍ z serwerem VNC przy uøyciu protoko≥u RFB,
-pozwalaj±c na przechwytywanie ekranu zdalnego komputera. Modu≥ umiera
-przy b≥Ídach po≥±czenia (z timeoutem 15 sekund) i b≥Ídach protoko≥u.
-Ta implementacja jest oparta g≥Ûwnie na specyfikacji protoko≥u RFB
-<http://www.realvnc.com/docs/rfbproto.pdf>. Dokument ten zawiera b≥±d
-w opisie szyfrowania DES, wyja∂niony pod
+%description -l pl.UTF-8
+VNC (Virtual Network Computing) to system wsp√≥≈Çdzielenia pulpitu
+u≈ºywajƒÖcy protoko≈Çu RFB (Remote FrameBuffer - zdalnego framebuffera)
+do zdalnego sterowania innym komputerem. Ten modu≈Ç dzia≈Ça jako klient
+VNC, komunikujƒÖc siƒô z serwerem VNC przy u≈ºyciu protoko≈Çu RFB,
+pozwalajƒÖc na przechwytywanie ekranu zdalnego komputera. Modu≈Ç umiera
+przy b≈Çƒôdach po≈ÇƒÖczenia (z timeoutem 15 sekund) i b≈Çƒôdach protoko≈Çu.
+Ta implementacja jest oparta g≈Ç√≥wnie na specyfikacji protoko≈Çu RFB
+<http://www.realvnc.com/docs/rfbproto.pdf>. Dokument ten zawiera b≈ÇƒÖd
+w opisie szyfrowania DES, wyja≈õniony pod
 <http://www.vidarholen.net/contents/junk/vnc.html>.
 
 %prep
