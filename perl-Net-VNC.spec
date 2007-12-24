@@ -8,13 +8,13 @@
 Summary:	Net::VNC - a simple VNC client
 Summary(pl.UTF-8):	Net::VNC - prosty klient VNC
 Name:		perl-Net-VNC
-Version:	0.35
+Version:	0.36
 Release:	0.1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c07b849083955235dfe986148b14db14
+# Source0-md5:	f53dd587c17155622f64db9020c892b0
 URL:		http://search.cpan.org/dist/Net-VNC/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
