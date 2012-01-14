@@ -8,13 +8,13 @@
 Summary:	Net::VNC - a simple VNC client
 Summary(pl.UTF-8):	Net::VNC - prosty klient VNC
 Name:		perl-Net-VNC
-Version:	0.36
+Version:	0.40
 Release:	0.1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f53dd587c17155622f64db9020c892b0
+# Source0-md5:	d7066735826442cd89c4f1cdefa272f2
 URL:		http://search.cpan.org/dist/Net-VNC/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -49,18 +49,19 @@ w opisie szyfrowania DES, wyjaśniony pod
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+%{__perl} Build.PL \
+	installdirs=vendor \
+	destdir=$RPM_BUILD_ROOT \
+	prefix=%{_prefix}
 
-%{__make}
+./Build
 
-%{?with_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} pure_install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
